@@ -1,0 +1,57 @@
+/* Moderate violet: hsl(263, 55%, 52%)
+Very dark grayish blue: hsl(217, 19%, 35%)
+Very dark blackish blue: hsl(219, 29%, 14%)
+White: hsl(0, 0%, 100%)
+
+Light gray: hsl(0, 0%, 81%)
+Light grayish blue: hsl(210, 46%, 95%) */
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: grid;
+    /* max-width: 90%; */
+    grid-template-areas: 
+    "a a a a b b e e"
+    "c c d d d d e e";
+    gap: 1.5rem;
+}
+
+.post {
+    border: 1px solid red;
+    padding: 2rem;
+}
+
+.daniel {
+    grid-area: a;
+}
+
+.jonathan {
+    grid-area: b;
+}
+
+.jeanette {
+    grid-area: c;
+}
+
+.patrick {
+    grid-area: d;
+}
+
+.kira {
+    grid-area: e;
+}
+
