@@ -15,15 +15,17 @@ Light grayish blue: hsl(210, 46%, 95%) */
 }
 
 body {
+    background-color: #ecf2f8;
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+
 .container{
     display: grid;
-    /* max-width: 90%; */
+    max-width: 90%;
     grid-template-areas: 
     "a a a a b b e e"
     "c c d d d d e e";
@@ -31,27 +33,85 @@ body {
 }
 
 .post {
-    border: 1px solid red;
-    padding: 2rem;
+    padding: 2.5rem;
+    border-radius: 12px;
+}
+
+.post img {
+    border-radius: 50%;
+    width: 35px;
+}
+
+.post .perfil-info {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.post .perfil-info h3 {
+    font-weight: 500;
 }
 
 .daniel {
     grid-area: a;
+    background-color: #7541c8;
+    background-image: url('../images/bg-pattern-quotation.svg');
+    background-repeat: no-repeat;
+    background-position-y: top;
+    background-position-x: 80%;
 }
 
 .jonathan {
     grid-area: b;
+    background-color: #48556a;
 }
 
 .jeanette {
     grid-area: c;
+    background-color: #fff;
 }
 
 .patrick {
     grid-area: d;
+    background-color: #19212e;
 }
 
 .kira {
     grid-area: e;
+    background-color: #fff;
+}
+
+.daniel,
+.jonathan,
+.patrick{
+    color: #fff;
+}
+
+.daniel .perfil-info span,
+.jonathan .perfil-info span,
+.patrick .perfil-info span{
+    color: #cfcfcf;
+    opacity: 50%;
+}
+
+.daniel blockquote,
+.jonathan blockquote,
+.patrick blockquote{
+    color: #cfcfcf;
+    opacity: 70%;
+}
+
+.jeanette,
+.kira {
+    color: hsl(219, 29%, 14%);
+}
+
+.jeanette .perfil-info span,
+.kira .perfil-info span {
+    opacity: 50%;
+}
+
+.jeanette blockquote,
+.kira blockquote{
+    opacity: 70%;
 }
 
