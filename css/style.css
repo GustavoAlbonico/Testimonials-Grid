@@ -31,7 +31,7 @@ body {
     gap: 1.1rem;
     padding: 2rem 2rem 2.5rem;
     border-radius: 12px;
-    box-shadow: 5px 5px 20px 0px #00000043;
+    box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.1);
 }
 
 .post img {
@@ -109,26 +109,26 @@ body {
 .daniel,
 .jonathan,
 .patrick{
-    color: #cfcfcf;
+    color: #fff
 }
 
 .daniel .perfil .perfil-info span,
 .jonathan .perfil .perfil-info span,
 .patrick .perfil .perfil-info span{
-    color: #cfcfcf;
+    color: #fff;
     opacity: 50%;
 }
 
 .daniel blockquote,
 .jonathan blockquote,
 .patrick blockquote{
-    color: #cfcfcf;
+    color: #fff;
     opacity: 70%;
 }
 
 .jeanette,
 .kira {
-    color: hsl(219, 29%, 14%);
+    color: rgba(25, 33, 46, 0.8);
 }
 
 .jeanette .perfil .perfil-info span,
